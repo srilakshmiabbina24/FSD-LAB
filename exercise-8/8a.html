@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Largest of Three Numbers</title>
+</head>
+<body>
+
+<script>
+    let a = parseInt(prompt("Enter first integer:"));
+    let b = parseInt(prompt("Enter second integer:"));
+    let c = parseInt(prompt("Enter third integer:"));
+
+    if (a === b && b === c) {
+        alert("Equal Numbers");
+    }
+    else if (a >= b && a >= c) {
+        alert("Largest number is: " + a);
+    }
+    else if (b >= a && b >= c) {
+        alert("Largest number is: " + b);
+    }
+    else {
+        alert("Largest number is: " + c);
+    }
+</script>
+
+</body>
+</html>
+

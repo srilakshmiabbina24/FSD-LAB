@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Object Data Using Loops</title>
+</head>
+<body>
+
+<h2>Print Object Data</h2>
+
+<h3>Using for-in Loop:</h3>
+<p id="forIn"></p>
+
+<h3>Using forEach Loop:</h3>
+<p id="forEach"></p>
+
+<h3>Using for-of Loop:</h3>
+<p id="forOf"></p>
+
+<script>
+    // Creating an object
+    let student = {
+        name: "Ravi",
+        age: 20,
+        course: "B.Tech",
+        college: "ABC College"
+    };
+
+    // Using for-in loop
+    let output1 = "";
+
+    for (let key in student) {
+        output1 += key + " : " + student[key] + "<br>";
+    }
+
+    document.getElementById("forIn").innerHTML = output1;
+
+
+    // Getting object values as an array
+    let values = Object.values(student);
+
+    // Using forEach loop
+    let output2 = "";
+
+    values.forEach(function(value) {
+        output2 += value + "<br>";
+    });
+
+    document.getElementById("forEach").innerHTML = output2;
+
+
+    // Using for-of loop
+    let output3 = "";
+
+    for (let value of values) {
+        output3 += value + "<br>";
+    }
+
+    document.getElementById("forOf").innerHTML = output3;
+</script>
+
+</body>
+</html>

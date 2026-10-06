@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>RegExp Object</title>
+</head>
+<body>
+
+<h2>Regular Expression Example</h2>
+
+<script>
+let pattern = /^[A-Za-z]+$/;
+
+let name = "Srilakshmi";
+
+document.write("Pattern: " + pattern + "<br>");
+document.write("Name: " + name + "<br>");
+
+if (pattern.test(name)) {
+    document.write("Name contains only alphabets.");
+} else {
+    document.write("Invalid name.");
+}
+</script>
+
+</body>
+</html>

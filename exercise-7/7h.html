@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Defined Object</title>
+</head>
+<body>
+
+<h2>User Defined Object Example</h2>
+
+<script>
+class Student {
+
+    // Constructor
+    constructor(name, age, course) {
+        this.name = name;
+        this.age = age;
+        this.course = course;
+    }
+
+    // Method
+    display() {
+        return "Name: " + this.name +
+               "<br>Age: " + this.age +
+               "<br>Course: " + this.course;
+    }
+
+    // Accessor - Getter
+    get studentName() {
+        return this.name;
+    }
+
+    // Accessor - Setter
+    set studentName(name) {
+        this.name = name;
+    }
+}
+
+// Creating object
+let student = new Student("Srilakshmi", 20, "B.Tech IT");
+
+// Display properties
+document.write(student.display() + "<br><br>");
+
+// Using getter
+document.write("Student Name: " + student.studentName + "<br>");
+
+// Using setter
+student.studentName = "Lakshmi";
+
+document.write("Updated Name: " + student.studentName);
+</script>
+
+</body>
+</html>

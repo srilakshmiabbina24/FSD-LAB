@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Denomination Breakdown</title>
+</head>
+<body>
+
+<h2>Deposit Denomination Breakdown</h2>
+
+<script>
+    let amount = parseInt(prompt("Enter deposit amount:"));
+
+    let denominations = [100, 50, 20, 10, 5, 1];
+    let result = "Denomination Breakdown:\n\n";
+
+    for (let denomination of denominations) {
+        let count = Math.floor(amount / denomination);
+
+        if (count > 0) {
+            result += "₹" + denomination + " : " + count + "\n";
+            amount = amount % denomination;
+        }
+    }
+
+    alert(result);
+</script>
+
+</body>
+</html>
