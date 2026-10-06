@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Selector Forms</title>
+
+    <style>
+        /* 1. Simple Selectors */
+
+        /* Element selector */
+        p {
+            color: blue;
+        }
+
+        /* ID selector */
+        #heading {
+            color: red;
+        }
+
+        /* Class selector */
+        .highlight {
+            background-color: yellow;
+        }
+
+        /* Group selector */
+        h2, h3 {
+            font-family: Arial;
+        }
+
+        /* Universal selector */
+        * {
+            box-sizing: border-box;
+        }
+
+
+        /* 2. Combinator Selectors */
+
+        /* Descendant selector */
+        .container p {
+            color: green;
+        }
+
+        /* Child selector */
+        .container > div {
+            border: 2px solid blue;
+            padding: 10px;
+        }
+
+        /* Adjacent sibling selector */
+        h2 + p {
+            background-color: pink;
+        }
+
+        /* General sibling selector */
+        h3 ~ p {
+            font-style: italic;
+        }
+
+
+        /* 3. Pseudo-class Selectors */
+
+        a:hover {
+            color: red;
+        }
+
+        input:focus {
+            background-color: lightyellow;
+        }
+
+        li:first-child {
+            color: purple;
+        }
+
+
+        /* 4. Pseudo-element Selectors */
+
+        p::first-letter {
+            font-size: 30px;
+            color: orange;
+        }
+
+        p::before {
+            content: "★ ";
+            color: red;
+        }
+
+
+        /* 5. Attribute Selectors */
+
+        input[type="text"] {
+            border: 2px solid green;
+        }
+
+        input[type="email"] {
+            border: 2px solid blue;
+        }
+
+        [title] {
+            background-color: lightgray;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1 id="heading">CSS Selector Forms</h1>
+
+    <h2>Simple Selectors</h2>
+
+    <p>This is an element selector.</p>
+
+    <p class="highlight">This is a class selector.</p>
+
+    <h3>Group Selector Example</h3>
+
+
+    <h2>Combinator Selectors</h2>
+
+    <div class="container">
+        <div>
+            <p>This is a child and descendant selector.</p>
+        </div>
+
+        <p>This is a descendant selector.</p>
+    </div>
+
+    <h2>Adjacent Sibling Example</h2>
+    <p>This paragraph is an adjacent sibling.</p>
+
+    <h3>General Sibling Example</h3>
+    <p>This paragraph is a general sibling.</p>
+    <p>This is another general sibling.</p>
+
+
+    <h2>Pseudo-Class Selectors</h2>
+
+    <a href="#">Hover over this link</a>
+
+    <br><br>
+
+    <input type="text" placeholder="Enter your name">
+
+    <br><br>
+
+    <ul>
+        <li>First item</li>
+        <li>Second item</li>
+        <li>Third item</li>
+    </ul>
+
+
+    <h2>Pseudo-Element Selectors</h2>
+
+    <p>This paragraph demonstrates pseudo-elements.</p>
+
+
+    <h2>Attribute Selectors</h2>
+
+    <input type="text" placeholder="Text input">
+
+    <br><br>
+
+    <input type="email" placeholder="Email input">
+
+    <br><br>
+
+    <button title="Button title">Click Me</button>
+
+</body>
+</html>
+
